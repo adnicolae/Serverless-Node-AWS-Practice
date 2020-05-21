@@ -1,0 +1,9 @@
+service: serverless-aws
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  hello-world:
+    handler: src/helloworld.handler

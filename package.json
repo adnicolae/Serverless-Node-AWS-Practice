@@ -1,0 +1,15 @@
+{
+  "name": "serverless-aws",
+  "scripts": {
+    "hello-world": "serverless invoke local -f hello-world --path src/event.json"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.5.0",
+    "serverless-offline": "^6.1.7"
+  }
+}
