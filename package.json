@@ -1,7 +1,8 @@
 {
   "name": "serverless-aws",
   "scripts": {
-    "dev": "serverless offline start --port 4500"
+    "dev": "serverless offline start --port 4500",
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^26.0.1",
