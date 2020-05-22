@@ -1,7 +1,7 @@
 {
   "name": "serverless-aws",
   "scripts": {
-    "hello-world": "serverless invoke local -f hello-world --path src/event.json"
+    "dev": "serverless offline start --port 4500"
   },
   "devDependencies": {
     "jest": "^26.0.1",
