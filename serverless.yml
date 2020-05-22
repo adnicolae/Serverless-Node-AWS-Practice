@@ -11,24 +11,22 @@ plugins:
 
 functions:
   api:
-    handler: src/api/api.handler
+    handler: src/index.handler
     events:
-      - http:
-          path: /api
-          method: GET
-          cors: true
-  todos:
-    handler: src/api/todos.handler
-    events:
-      - http:
-          path: /todos/{id}
-          method: GET
-          request:
-            parameters:
-              id: true
-  todo:
-    handler: src/api/todo.handler
-    events:
-      - http:
-          path: /todo
-          method: GET
+      - http: ANY /
+      - http: 'ANY /{param+}'
+  # todos:
+  #   handler: src/api/todos.handler
+  #   events:
+  #     - http:
+  #         path: /todos/{id}
+  #         method: GET
+  #         request:
+  #           parameters:
+  #             id: true
+  # todo:
+  #   handler: src/api/todo.handler
+  #   events:
+  #     - http:
+  #         path: /todo
+  #         method: GET
